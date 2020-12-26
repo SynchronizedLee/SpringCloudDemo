@@ -1,0 +1,20 @@
+server:
+  port: 7901
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka2.com:7902/eureka/
+  instance:
+    hostname: eureka1.com
+
+management:
+  endpoint:
+    shutdown:
+    enabled: true
+
+spring:
+  application:
+    name: eureka-server-liyang
