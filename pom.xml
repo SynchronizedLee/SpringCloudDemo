@@ -11,6 +11,7 @@
     <modules>
         <module>cloud-eureka-1</module>
         <module>cloud-eureka-2</module>
+        <module>cloud-eureka-3</module>
     </modules>
 
     <packaging>pom</packaging>

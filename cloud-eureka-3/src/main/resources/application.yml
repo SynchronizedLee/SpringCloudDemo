@@ -1,5 +1,5 @@
 server:
-  port: 7902
+  port: 7903
 
 eureka:
   client:
@@ -8,7 +8,7 @@ eureka:
     service-url:
       defaultZone: http://eureka1.com:7901/eureka/,http://eureka2.com:7902/eureka/,http://eureka3.com:7903/eureka/
   instance:
-    hostname: eureka2.com
+    hostname: eureka3.com
 
 management:
   endpoint:

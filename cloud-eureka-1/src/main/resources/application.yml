@@ -6,14 +6,14 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://eureka2.com:7902/eureka/
+      defaultZone: http://eureka1.com:7901/eureka/,http://eureka2.com:7902/eureka/,http://eureka3.com:7903/eureka/
   instance:
     hostname: eureka1.com
 
 management:
   endpoint:
     shutdown:
-    enabled: true
+      enabled: true
 
 spring:
   application:
