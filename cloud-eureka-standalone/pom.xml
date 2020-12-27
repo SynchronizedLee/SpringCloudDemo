@@ -11,9 +11,9 @@
     </parent>
 
     <groupId>pri.liyang</groupId>
-    <artifactId>eureka-server-3</artifactId>
+    <artifactId>eureka-server-standalone</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>cloud-eureka-3</name>
+    <name>cloud-eureka-standalone</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>

@@ -17,4 +17,4 @@ management:
 
 spring:
   application:
-    name: eureka-server-liyang
+    name: eureka-cluster-server-liyang
