@@ -1,0 +1,9 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: cloud-consumer-liyang
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eurekastandalone.com:7900/eureka/

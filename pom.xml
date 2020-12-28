@@ -13,6 +13,10 @@
         <module>cloud-eureka-2</module>
         <module>cloud-eureka-3</module>
         <module>cloud-eureka-standalone</module>
+        <module>cloud-provider-1</module>
+        <module>cloud-common</module>
+        <module>cloud-consumer-1</module>
+        <module>cloud-provider-2</module>
     </modules>
 
     <packaging>pom</packaging>
