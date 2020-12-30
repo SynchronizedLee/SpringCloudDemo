@@ -1,6 +1,7 @@
 package pri.liyang.consumer.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
 import pri.liyang.consumer.service.CloudConsumerService;
 
@@ -9,6 +10,7 @@ import pri.liyang.consumer.service.CloudConsumerService;
 public class CloudConsumerController {
 
     @Autowired
+    @Qualifier("cloudConsumerService")
     CloudConsumerService cloudConsumerService;
 
     @GetMapping("/init")
