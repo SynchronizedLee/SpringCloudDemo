@@ -7,3 +7,7 @@ eureka:
   client:
     service-url:
       defaultZone: http://eurekastandalone.com:7900/eureka/
+
+cloud-provider-liyang:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
