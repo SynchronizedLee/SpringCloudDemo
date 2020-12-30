@@ -1,9 +1,7 @@
 package pri.liyang.consumer.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import pri.liyang.consumer.service.CloudConsumerService;
 
 @RestController
@@ -31,6 +29,21 @@ public class CloudConsumerController {
     @GetMapping("/greet")
     public String greeting(String name, int age) {
         return cloudConsumerService.greeting(name, age);
+    }
+
+    @GetMapping("/halfError")
+    String halfError() {
+        return cloudConsumerService.halfError();
+    }
+
+    @GetMapping("/quarterError")
+    String quarterError() {
+        return cloudConsumerService.quarterError();
+    }
+
+    @GetMapping("/customError")
+    String customError(Double errorProbability) {
+        return cloudConsumerService.customError(errorProbability);
     }
 
 }

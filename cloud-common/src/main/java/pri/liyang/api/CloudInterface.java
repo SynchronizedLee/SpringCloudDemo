@@ -1,8 +1,6 @@
 package pri.liyang.api;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 @RequestMapping(value = "cloud")
 public interface CloudInterface {
@@ -18,5 +16,14 @@ public interface CloudInterface {
 
     @GetMapping("/greet")
     String greeting(@RequestParam("name")String name, @RequestParam("age")int age);
+
+    @PostMapping("/halfError")
+    String halfError();
+
+    @PutMapping("/quarterError")
+    String quarterError();
+
+    @DeleteMapping("/customError")
+    String customError(@RequestParam("errorProbability") Double errorProbability);
 
 }
