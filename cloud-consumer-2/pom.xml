@@ -11,9 +11,9 @@
     </parent>
 
     <groupId>pri.liyang</groupId>
-    <artifactId>cloud-consumer-1</artifactId>
+    <artifactId>cloud-consumer-2</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>cloud-consumer-1</name>
+    <name>cloud-consumer-2</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
