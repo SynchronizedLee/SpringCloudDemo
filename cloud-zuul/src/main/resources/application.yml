@@ -1,0 +1,15 @@
+server:
+  port: 9999
+spring:
+  application:
+    name: cloud-zuul-server-liyang
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eurekastandalone.com:7900/eureka/
+zuul:
+  routes:
+    cloud-consumer-liyang: /consumer/**
+cloud-consumer-liyang:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule

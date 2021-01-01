@@ -18,6 +18,7 @@
         <module>cloud-provider-2</module>
         <module>cloud-consumer-1</module>
         <module>cloud-consumer-2</module>
+        <module>cloud-zuul</module>
     </modules>
 
     <packaging>pom</packaging>
